@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="fondoimg">
+  <!-- CSS: Hojas de estilos en cascada -->
+  <!-- selector: {} -->
+   <!-- ¿Qué es un selector ? = A QUIEN LE AFECTA LOS ATRIBUTOS ESTILOS -->
+<!-- etiquetas {}, .unaclase{}, #identificador {} -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    /*Solo se puede utilizar una vez*/
+    #titulo{
+      color: red;
+      text-align:center;
+      font-size: 30px;
+      text-transform: uppercase; /*Mayusculas*/
+      font-weight: bold;/*Negrita*/
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    /*Le afecta a todas las etiquetas <p> */
+    p{
+      color: blue;
+      text-align:center;
+       font-style: italic;
+       margin-top: 2em; /*1em = 16px = 1M */
+       margin-bottom: 4em;
+    }
+    .importante{
+      background-color: #ffa215;
+      border:1px dashed purple;;/*dotted,solid,double,dashed*/
+      padding: 10px;/*Espacio interno*/
+      color: black;
+    }
+    .caja{
+      background-color: aquamarine;
+      display: inline-block;/*mostrar una sola linea*/
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      /*border: 1px solid black;*/
+     /*  padding-left: 40px; */
+      padding-top: 40px;
+      
+
+    }
+
+    .caja:hover{
+      background-color: rgb(4, 0, 255);
+      color: white;
+      border: 1px solid white;
+      border-radius: 50%;
+      
+    }
+    .fondoimg{
+      background-image: url("images/fondo.webp");
+    }
+    .fontimg{
+      background-image: url("images/img.webp");
+    }
+
+  </style>
+
+  <h1 id="titulo">Fundamentos de CSS</h1>
+
+  <!-- Atributo:valor atributo:valor; -->
+  <p > 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quod adipisci laboriosam labore provident? Fugit mollitia animi placeat ut aspernatur itaque at dolores ipsum ex, architecto autem rerum perferendis, quos molestiae!
+    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  </p>
+
+   <p> 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quod adipisci laboriosam labore provident? Fugit mollitia animi placeat ut aspernatur itaque at dolores ipsum ex, architecto autem rerum perferendis, quos molestiae!
+    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  </p>
+
+   <p class="importante" > 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quod adipisci laboriosam labore provident? Fugit mollitia animi placeat ut aspernatur itaque at dolores ipsum ex, architecto autem rerum perferendis, quos molestiae!
+    lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  </p>
+  <hr><!-- Linea horizontal -->
+  <br><!-- Salto de linea -->
+
+  <div class="caja">
+    caja 1
+  </div>
+
+  <div class="caja">
+    caja 2  
+  </div>
+
+  
+</body>
+
+</html>

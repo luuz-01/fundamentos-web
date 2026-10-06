@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/estilos-formularios.css">
+</head>
+<body>
+  <div class="form-container">
+
+    <form class="form">
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label class="form-label" for="nombre">
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    class="form-input"
+                    placeholder="Ingrese su nombre"
+                >
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="apellido">
+                    Apellido
+                </label>
+
+                <input
+                    type="text"
+                    id="apellido"
+                    class="form-input"
+                    placeholder="Ingrese su apellido"
+                >
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+            <label class="form-label" for="correo">
+                Correo electrónico
+            </label>
+
+            <input
+                type="text"
+                id="correo"
+                class="form-input"
+                placeholder="usuario@dominio.com"
+            >
+
+            <small class="form-help">
+                Utilice una dirección de correo válida.
+            </small>
+        </div>
+
+
+        <div class="form-group">
+            <label class="form-label" for="pais">
+                País
+            </label>
+
+            <select id="pais" class="form-select">
+                <option value="">Seleccione un país</option>
+                <option value="pe">Perú</option>
+                <option value="co">Colombia</option>
+                <option value="cl">Chile</option>
+                <option value="mx">México</option>
+            </select>
+        </div>
+
+
+        <div class="form-actions">
+
+            <button
+                type="submit"
+                class="btn btn-primary">
+                Guardar
+            </button>
+
+            <button
+                type="reset"
+                class="btn btn-secondary">
+                Cancelar
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+  
+</body>
+</html>
